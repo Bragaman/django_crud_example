@@ -26,7 +26,13 @@ class Mail(models.Model):
         verbose_name="Text"
     )
     created_at = models.DateTimeField(
-        auto_created=True
+        auto_now_add=True,
+        verbose_name="Created at",
+
+    )
+    unread = models.BooleanField(
+        default=True,
+        verbose_name="Is unread",
     )
 
     class Meta:
