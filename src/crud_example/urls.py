@@ -19,7 +19,7 @@ from django.urls import include
 
 
 urlpatterns = [
-    url('^api/auth', include('rest_framework.urls', namespace='rest_framework')),
-    url('^api/', include('django.contrib.auth.urls')),
+    url('^api/auth/', include('rest_framework.urls', namespace='rest_framework')),
     url('^api/', include('mail.urls')),
+    url('^api/', include('users.urls'))
 ]

@@ -14,7 +14,7 @@ class MailSerializer(serializers.ModelSerializer):
         ]
 
 
-class MailUpdateSerialiser(MailSerializer):
+class MailUpdateSerializer(MailSerializer):
 
     class Meta(MailSerializer.Meta):
         read_only_fields = [
